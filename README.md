@@ -6,7 +6,7 @@ int j;
 int angle;
 Servo myservo;
 void setup() {
-  // put your setup code here, to run once:
+  
   
   myservo.attach(servoPin);
   pinMode(lightPin,INPUT);
@@ -14,8 +14,8 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-    lightVal=analogRead(lightPin);
+  
+  lightVal=analogRead(lightPin);
   Serial.println(lightVal);
   delay(500);
   angle=(-4/19.)*lightVal+4.*817./19.;
